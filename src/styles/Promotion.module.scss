@@ -1,0 +1,120 @@
+.promotion {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 354px;
+
+  .promotion_bg_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .promotion_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1244px;
+    height: 346px;
+    flex-shrink: 0;
+    border-radius: 1244px;
+    color: #fff;
+    background-image: url("../assets/pro_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .promotion_title {
+      color: #fff;
+      text-align: center;
+      font-family: Barlow;
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    .promotion_text {
+      text-align: center;
+      font-family: Barlow;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: -0.108px;
+      color: #fff;
+      max-width: 996px;
+    }
+  }
+}
+.promotion_text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .text_border {
+    border-right: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    width: 50%;
+    overflow: hidden;
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+    &:nth-child(3) {
+      border-bottom: none;
+    }
+    &:nth-child(4) {
+        border-bottom: none;
+      }
+    .promotion_text_item {
+      display: flex;
+      width: 100%;
+      padding: 80px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        scale: 1.1;
+      }
+
+      .item_box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+          font-family: Barlow;
+          font-size: 26px;
+          font-weight: 500;
+          line-height: 39px;
+          letter-spacing: -0.156px;
+          color: #fff;
+        }
+      }
+      p {
+        color: #e6e6e6;
+        font-family: Barlow;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.12px;
+      }
+    }
+  }
+}

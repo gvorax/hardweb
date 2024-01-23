@@ -1,0 +1,102 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .bg_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    // background: red;
+
+    .bg_video_content {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .main_content {
+    width: 100%;
+    margin-top: 112px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+      font-family: Barlow;
+      font-size: 68px;
+      font-weight: 600;
+      color: #fff;
+      max-width: 900px;
+    }
+    .main_button {
+      margin-top: 40px;
+      display: flex;
+      padding: 24px 40px;
+      border-radius: 12px;
+      border: 1px solid #1d354f;
+      background: rgba(36, 36, 36, 0.2);
+      backdrop-filter: blur(6px);
+      align-items: center;
+      gap: 6px;
+
+      a {
+        display: flex;
+        padding: 12px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: rgba(38, 38, 38, 0.7);
+        text-decoration: none;
+        font-size: 22px;
+        color: #fff;
+      }
+      p {
+        color: #98989a;
+        font-family: Barlow;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .main_buttons {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      a {
+        display: flex;
+        padding: 18px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        border: 1px solid #333;
+        background: rgba(36, 36, 36, 0.2);
+        backdrop-filter: blur(6px);
+        color: #fff;
+        font-family: Barlow;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        margin-top: 80px;
+
+        &:nth-child(2) {
+          border-radius: 10px;
+          background: rgba(22, 92, 170, 0.6);
+          border: 1px solid rgba(22, 92, 170, 0.6);
+        }
+      }
+    }
+  }
+}
+

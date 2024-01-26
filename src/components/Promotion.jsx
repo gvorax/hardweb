@@ -70,7 +70,7 @@ export default function Promotion() {
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
               <div className={styles.item_box}>
-                <Image src={require("@/assets/icon (3).png")} alt="img" />
+                <Image src={require("@/assets/icon3.png")} alt="img" />
                 <span>Mahorat</span>
               </div>
               <p>
@@ -85,7 +85,7 @@ export default function Promotion() {
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
               <div className={styles.item_box}>
-                <Image src={require("@/assets/icon (3).png")} alt="img" />
+                <Image src={require("@/assets/icon4.png")} alt="img" />
                 <span>Mahorat</span>
               </div>
               <p>
@@ -100,7 +100,7 @@ export default function Promotion() {
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
               <div className={styles.item_box}>
-                <Image src={require("@/assets/icon (3).png")} alt="img" />
+                <Image src={require("@/assets/icon5.png")} alt="img" />
                 <span>Mahorat</span>
               </div>
               <p>
@@ -115,7 +115,7 @@ export default function Promotion() {
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
               <div className={styles.item_box}>
-                <Image src={require("@/assets/icon (3).png")} alt="img" />
+                <Image src={require("@/assets/icon6.png")} alt="img" />
                 <span>Mahorat</span>
               </div>
               <p>

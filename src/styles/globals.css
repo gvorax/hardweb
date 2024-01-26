@@ -1,27 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  background: #1A1A1A;
+  background: #1a1a1a;
 }
-.container{
+.container {
   width: 84%;
   margin: 0 auto;
 }
-.flex-between{
+.flex-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.flex-center{
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.css-adeloa-MuiSlider-root {
+  color: #fff !important;
+}
+
+.css-yafthl-MuiSlider-markLabel, .css-1eoe787-MuiSlider-markLabel {
+  color: var(--Absolute-White, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }

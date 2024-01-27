@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/Header.module.scss";
 import Navbar from "./Navbar";
+import video from '../assets/video.mp4';
 export default function Header() {
   return (
     <div className={styles.header}>
@@ -11,7 +12,7 @@ export default function Header() {
         </video> */}
         <video
           className={styles.bg_video_content}
-          src={require("../assets/video.mp4")}
+          src={video}
           loop
           autoPlay
           muted

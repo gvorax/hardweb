@@ -7,8 +7,12 @@ import Slider from "@mui/material/Slider";
 import Link from "next/link";
 import Icon3 from "../assets/Icon3.png";
 import video from "../assets/12201.mp4";
+import Profile from "../assets/Profile.png";
+import Instagram from '../assets/instagram.png';
+import Facebook from '../assets/facebook.png';
+import Linkedin from '../assets/linkedin.png';
 
-import logo from "../video.mp4";
+import logo from "../assets/logo.png";
 
 function valuetext(value) {
   return `${value} $`;
@@ -171,7 +175,7 @@ export default function Promotion() {
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
                     <Image
-                      src={require("@/assets/Profile.png")}
+                      src={Profile}
                       alt=""
                       width={60}
                       height={60}
@@ -204,7 +208,7 @@ export default function Promotion() {
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
                     <Image
-                      src={require("@/assets/Profile.png")}
+                      src={Profile}
                       alt=""
                       width={60}
                       height={60}
@@ -237,7 +241,7 @@ export default function Promotion() {
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
                     <Image
-                      src={require("@/assets/Profile.png")}
+                      src={Profile}
                       alt=""
                       width={60}
                       height={60}
@@ -270,7 +274,7 @@ export default function Promotion() {
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
                     <Image
-                      src={require("@/assets/Profile.png")}
+                      src={Profile}
                       alt=""
                       width={60}
                       height={60}
@@ -303,7 +307,7 @@ export default function Promotion() {
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
                     <Image
-                      src={require("@/assets/Profile.png")}
+                      src={Profile}
                       alt=""
                       width={60}
                       height={60}
@@ -336,7 +340,7 @@ export default function Promotion() {
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
                     <Image
-                      src={require("@/assets/Profile.png")}
+                      src={Profile}
                       alt=""
                       width={60}
                       height={60}
@@ -388,7 +392,7 @@ export default function Promotion() {
         </div>
         <div className={styles.promotion_content}>
           <div className={styles.promotion_logo}>
-            <Image src={require("@/assets/logo.png")} alt="logo" />
+            <Image src={logo} alt="logo" />
           </div>
           <h1 className={styles.promotion_title}>
             Hard Web-ga qiziqqaningiz uchun tashakkur.
@@ -518,13 +522,13 @@ export default function Promotion() {
             <p>Obuna bo'ling</p>
             <div className={styles.social}>
               <a href="#">
-                <Image src={require("@/assets/instagram.png")} alt="img" />
+                <Image src={Instagram} alt="img" />
               </a>
               <a href="#">
-                <Image src={require("@/assets/linkedin.png")} alt="img" />
+                <Image src={Linkedin} alt="img" />
               </a>
               <a href="#">
-                <Image src={require("@/assets/facebook.png")} alt="img" />
+                <Image src={Facebook} alt="img" />
               </a>
             </div>
           </div>

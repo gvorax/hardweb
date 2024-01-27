@@ -59,3 +59,34 @@
 .btn:hover a {
   box-shadow: 0 0 10px 10px #2278db
 }
+
+
+@media screen and (max-width:1367px) {
+  .navbar{
+    padding: 16px 0px;
+
+
+    .logo{
+      gap: 10px;
+      font-size: 28px;
+      line-height: 30px;
+    }
+
+    .links a{
+      font-size: 16px;
+      line-height: 24px;
+      padding: 12px 24px;
+
+      img{
+        width: 40px !important;
+        height: 40px !important;
+      }
+    }
+
+    .btn a{
+      font-size: 16px;
+      line-height: 24px;
+      padding: 12px 24px;
+    }
+  }
+}

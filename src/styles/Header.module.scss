@@ -100,3 +100,27 @@
   }
 }
 
+
+@media screen and (max-width:1367px) {
+  .header{
+    .main_content{
+      margin-top: 90px;
+      h1{
+        font-size: 48px;
+      }
+      .main_button{
+        a{
+          font-size: 18px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+      .main_buttons{
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

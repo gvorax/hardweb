@@ -26,8 +26,14 @@ body {
   align-items: center;
 }
 
-.css-1heuipj {
+.css-1heuipj, span {
   color: #fff !important;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .css-yafthl-MuiSlider-markLabel, .css-1eoe787-MuiSlider-markLabel {

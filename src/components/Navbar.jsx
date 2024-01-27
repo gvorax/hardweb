@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import logo from "@/assets/logo.png";
+import logo from "../assets/logo.png";
 
-import styles from "@/styles/Navbar.module.scss";
+import styles from "../styles/Navbar.module.scss";
 
 export default function Navbar() {
   const [activeItem, setActiveItem] = useState(null);

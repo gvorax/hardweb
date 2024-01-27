@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "@/styles/Promotion.module.scss";
+import styles from "../styles/Promotion.module.scss";
 import Image from "next/image";
 import FAQItem from "./FAQ";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import Link from "next/link";
-import Icon3 from "@/assets/Icon3.png";
-import video from "@/assets/12201.mp4";
+import Icon3 from "../assets/Icon3.png";
+import video from "../assets/12201.mp4";
 
-import logo from "@/assets/logo.png";
+import logo from "../video.mp4";
 
 function valuetext(value) {
   return `${value} $`;

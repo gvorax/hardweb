@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/About.module.scss";
+import styles from "../styles/About.module.scss";
 import Image from "next/image";
 import Image1 from "../assets/sponser1.png";
 import Image2 from "../assets/sponser2.png";

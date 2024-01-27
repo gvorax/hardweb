@@ -6,6 +6,7 @@ import Image2 from "../assets/sponser2.png";
 import Image3 from "../assets/sponser3.png";
 import Image4 from "../assets/sponser4.png";
 import Image5 from "../assets/sponser5.png";
+import video from "../assets/12201.mp4";
 
 const About = () => {
   return (
@@ -40,7 +41,7 @@ const About = () => {
           </p>
           <div className={styles.about_video}>
             <video
-              src={require("@/assets/12201.mp4")}
+              src={video}
               loop
               muted
               autoPlay

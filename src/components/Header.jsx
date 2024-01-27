@@ -6,10 +6,6 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.bg_video}>
-        {/* <video   controls width={400} autoPlay >
-          <source src="../assets/video.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video> */}
         <video
           className={styles.bg_video_content}
           src={video}

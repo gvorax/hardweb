@@ -5,8 +5,8 @@ import FAQItem from "./FAQ";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import Link from "next/link";
-import Icon3 from "@/assets/icon3.png";
-// import Image from "next/image";
+import Icon3 from "@/assets/Icon3.png";
+import video from "@/assets/12201.mp4";
 
 import logo from "@/assets/logo.png";
 
@@ -50,7 +50,7 @@ export default function Promotion() {
       <div className={styles.promotion}>
         <div className={styles.promotion_bg_video}>
           <video
-            src={require("@/assets/12201.mp4")}
+            src={video}
             loop
             autoPlay
             muted
@@ -133,7 +133,7 @@ export default function Promotion() {
       <div className={styles.promotion}>
         <div className={styles.promotion_bg_video}>
           <video
-            src={require("@/assets/12201.mp4")}
+            src={video}
             loop
             autoPlay
             muted
@@ -356,7 +356,7 @@ export default function Promotion() {
       <div className={styles.promotion}>
         <div className={styles.promotion_bg_video}>
           <video
-            src={require("@/assets/12201.mp4")}
+            src={video}
             loop
             autoPlay
             muted
@@ -380,7 +380,7 @@ export default function Promotion() {
       <div className={styles.promotion} style={{height:'545px',marginTop:'50px'}}>
         <div className={styles.promotion_bg_video}>
           <video
-            src={require("@/assets/12201.mp4")}
+            src={video}
             loop
             autoPlay
             muted

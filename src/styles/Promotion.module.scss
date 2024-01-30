@@ -616,75 +616,256 @@
     }
   }
 
-  .forms{
+  .forms {
     margin-top: 80px;
 
-    .form{
-      .form_name{
+    .form {
+      .form_name {
         gap: 40px;
 
-        .name{
+        .name {
           padding: 24px 40px;
           gap: 20px;
 
-          label{
+          label {
             font-size: 20px;
             line-height: 30px;
           }
-          input{
+          input {
             font-size: 16px;
             line-height: 24px;
           }
         }
       }
-      .types{
+      .types {
         margin-top: 35px;
         padding: 40px;
 
-        p{
+        p {
           font-size: 20px;
           line-height: 30px;
         }
 
-        .checkbox{
-          .checkbox_item{
-            .item_check{
-              label{
+        .checkbox {
+          .checkbox_item {
+            .item_check {
+              label {
                 font-size: 16px;
                 line-height: 24px;
               }
 
-              input[type="checkbox"]{
+              input[type="checkbox"] {
                 width: 24px;
                 height: 24px;
               }
-
-
             }
           }
         }
       }
 
-      .finance{
+      .finance {
         margin-top: 35px;
         padding: 40px;
 
-        h2{
+        h2 {
           font-size: 20px;
           line-height: 30px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .message {
+        margin-top: 35px;
+
+        label {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        input {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .form_btn {
+        margin-top: 40px;
+        a {
+          padding: 18px 34px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-bottom: 40px;
+    .logo {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .links a {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 14px 20px;
+    }
+    .btn {
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .social {
+        a {
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .promotion {
+    .promotion_content {
+      width: 100%;
+      height: auto;
+      background: none;
+      padding: 20px;
+      .promotion_title {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .promotion_text {
+        font-size: 14px;
+        line-height: 21px;
+      }
+      .promotion_btn {
+        flex-direction: column;
+        margin-top: 20px;
+        a {
+          padding: 14px 20px;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+  .promotion_text {
+    flex-direction: column;
+
+    .text_border {
+      width: 100%;
+    }
+    .promotion_text_item {
+      padding: 60px;
+      gap: 30px;
+
+      .item_box {
+        span {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+      .item_title {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .feedbacks {
+        gap: 20px;
+        a {
+          display: none;
+        }
+        .feedback_text {
+          h3 {
+            font-size: 18px;
+            line-height: 27px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+        a {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .forms {
+    margin-top: 80px;
+
+    .form {
+      max-width: 100%;
+      padding: 20px;
+      .form_name {
+        flex-direction: column;
+        gap: 20px;
+
+        .name {
+         width: 100%;
+          padding: 20px;
+          gap: 10px;
+
+          label {
+            font-size: 18px;
+            line-height: 27px;
+          }
+          input {
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .types{
+        width: 100%;
+
+        p{
+          font-size: 18px;
+          line-height: 27px;
+        }
+
+        .checkbox{
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 25px;
+          .checkbox_item{
+            width: 100%;
+          }
+        }
+      }
+
+      .finance{
+        width: 100%;
+        padding: 20px;
+
+        h2{
+          font-size: 18px;
+          line-height: 27px;
         }
         p{
           font-size: 16px;
           line-height: 24px;
         }
       }
-      .message{
-        margin-top: 35px;
-        
 
+      .message{
+        width: 100%;
+        padding: 20px;
         label{
-          font-size: 20px;
-          line-height: 30px;
+          font-size: 18px;
+          line-height: 27px;
         }
         input{
           font-size: 16px;
@@ -694,39 +875,72 @@
       .form_btn{
         margin-top: 40px;
         a{
-          padding: 18px 34px;
+          padding: 14px 20px;
           font-size: 16px;
           line-height: 24px;
         }
       }
     }
-    
+
   }
 
-  .footer{
+  .footer {
     padding-bottom: 40px;
-    .logo{
+
+    .flex_column {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 20px;
+    }
+    .logo {
       font-size: 24px;
       line-height: 36px;
     }
-    .links a{
-      font-size: 16px;
+    .links{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .links a {
+      font-size: 14px;
       line-height: 24px;
       padding: 14px 20px;
     }
-    .btn{
-      p{
+    .btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      p {
         font-size: 16px;
         line-height: 24px;
       }
 
-      .social{
-        a{
-          img{
+      .social {
+        a {
+          img {
             width: 40px;
             height: 40px;
           }
         }
+      }
+    }
+  }
+
+  .footer_bottom{
+    .flex_align{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .data{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
       }
     }
   }

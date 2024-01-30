@@ -477,7 +477,7 @@ export default function Promotion() {
       </div>
 
       <div className={styles.footer}>
-        <div className="container flex-between">
+        <div className={`container flex-between  ${styles.flex_column}`}>
           <Link href="/" className={`${styles.logo} flex-center`}>
             <Image src={logo} width={60} height={60} alt="ada" /> Hard Web
           </Link>
@@ -536,7 +536,7 @@ export default function Promotion() {
       </div>
 
       <div className={styles.footer_bottom}>
-        <div className="container flex-between">
+        <div className={`container flex-between ${styles.flex_align}`}>
           <div className={styles.data}>
             <div className={styles.data_info}>
               <svg

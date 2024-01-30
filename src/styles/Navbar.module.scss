@@ -6,7 +6,7 @@
   align-items: center;
   padding: 20px 0;
   background-color: transparent;
-  border-bottom: 1px solid #1D354F;
+  border-bottom: 1px solid #1d354f;
   color: white;
 }
 .logo {
@@ -30,13 +30,31 @@
   padding: 14px 28px;
   border-radius: 8px;
 }
-.links .active {
+.links .active, .links1 .active {
   background: rgba(38, 38, 38, 0.6);
 }
-.links a:hover {
+.links a:hover,.links1 a:hover{
   background: rgba(38, 38, 38, 0.6);
 }
-
+.links1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  a{
+    color: #fff;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+  }
+  
+  
+}
 .btn {
   a {
     padding: 16px 24px;
@@ -54,39 +72,128 @@
     text-decoration: none;
     transition: 0.3s all;
   }
+
+  .drawer {
+    display: none;
+  }
 }
 
+.drawer {
+  display: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
 .btn:hover a {
-  box-shadow: 0 0 10px 10px #2278db
+  box-shadow: 0 0 10px 10px #2278db;
 }
 
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: rgba($color: #000000, $alpha: 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  padding: 20px;
+  transition: 0.3s all;
+  transform: translateX(300px);
 
-@media screen and (max-width:1367px) {
-  .navbar{
+  .exit{
+    color: #fff;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+  }
+  .btn1{
+    margin-top: 20px;
+    text-align: center;
+    a {
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: #165caa;
+      color: #fff;
+      font-family: Barlow;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 27px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s all;
+    }
+  }
+  .btn1:hover a {
+    box-shadow: 0 0 10px 10px #2278db;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .navbar {
     padding: 16px 0px;
 
-
-    .logo{
+    .logo {
       gap: 10px;
       font-size: 28px;
       line-height: 30px;
     }
 
-    .links a{
+    .links a {
       font-size: 16px;
       line-height: 24px;
       padding: 12px 24px;
 
-      img{
+      img {
         width: 40px !important;
         height: 40px !important;
       }
     }
 
-    .btn a{
+    .btn a {
       font-size: 16px;
       line-height: 24px;
       padding: 12px 24px;
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 16px 0px;
+
+    .logo {
+      gap: 10px;
+      font-size: 24px;
+      line-height: 30px;
+
+      img {
+        width: 46px !important;
+        height: 46px !important;
+      }
+    }
+
+    .links {
+      display: none;
+    }
+    .btn {
+      display: none;
+    }
+    .drawer{
+      display: flex;
+    }
+    .sidebarActive{
+      display: flex;
+      transform: translateX(0);
+      flex-direction: column;
+
+     
+    }
+
   }
 }

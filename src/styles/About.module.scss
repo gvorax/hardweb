@@ -199,3 +199,71 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .about {
+    .sponsers {
+      padding: 30px 0;
+      justify-content: center;
+      gap: 10px;
+
+      .sporser_box {
+        padding: 5px 0;
+        max-width: 130px;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .sponser_title {
+        width: 180px;
+        text-align: center;
+        padding: 14px 0px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .about_title {
+      height: 300px;
+      
+      h2 {
+        display: inline-block;
+
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
+
+      .about_video {
+        video {
+          object-fit: cover;
+        }
+      }
+    }
+
+    .about_services {
+      flex-direction: column;
+      gap: 20px;
+      .service_item {
+        width: 100%;
+        padding: 20px;
+        border-right: none;
+        &:last-child {
+          border-right: none;
+        }
+        .item_icon {
+          margin-bottom: 20px;
+        }
+        button {
+          padding: 14px 16px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

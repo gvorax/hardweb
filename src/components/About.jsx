@@ -36,16 +36,12 @@ const About = () => {
         <div className={styles.about_title}>
           <h2>Bizning Xizmatlarimiz</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Biz IT sohasidagi muammolarni hal qilishga yordam beramiz. Istalgan
+            turdagi veb-sayt, telegram bot, mobil ilova, internet magazinlarni
+            siz uchun yaratamiz!
           </p>
           <div className={styles.about_video}>
-            <video
-              src={video}
-              loop
-              muted
-              autoPlay
-            ></video>
+            <video src={video} loop muted autoPlay></video>
           </div>
         </div>
 
@@ -82,13 +78,13 @@ const About = () => {
             </div>
             <h2>Dizayn</h2>
             <p>
-              ed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit,
+              Bizning professional dizayn jamoamiz, internet-saytlar uchun
+              innovatsion va eng yaxshi texnologiyalarni ishlatadi. Sizning
+              biznesingizni ommaga ko'rsatish uchun zamonaviy dizaynlardan
+              foydalaning. Boshqalar orasida ajratiladigan eng yaxshi dizaynlar
+              uchun bizga murojaat qiling.
             </p>
-            <button>Learn More</button>
+            <button>Buyurtma berish</button>
           </div>
           <div className={styles.service_item}>
             <div className={styles.item_icon}>
@@ -120,15 +116,13 @@ const About = () => {
                 </defs>
               </svg>
             </div>
-            <h2>Dizayn</h2>
+            <h2>Ilovalar</h2>
             <p>
-              ed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit,
+              Istalgran turdagi saytlar yani Landing page, Korporativ saytlar,
+              Onlayn do'konlar kabi saytlarni koperayting bilan birga siz uchun
+              tayyorlab beramiz.
             </p>
-            <button>Learn More</button>
+            <button>Buyurtma berish</button>
           </div>
           <div className={styles.service_item}>
             <div className={styles.item_icon}>
@@ -160,15 +154,17 @@ const About = () => {
                 </defs>
               </svg>
             </div>
-            <h2>Dizayn</h2>
+            <h2>SEO optimization</h2>
             <p>
-              ed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit,
+              Internet trafikini oshirish va onlayn ko'rsatishlarini yaxshilash
+              uchun SEO xizmatlarimiz ham mavjud! Bizning SEO mutaxassislarimiz
+              sizning saytingizni qidiruv tizimlarining ustunligidan foydalanish
+              uchun muhim kalitlarni belgilaydi va sizning tashrifchilaringiz
+              sonini oshiradi. Biz bilan hamkorlik qiling va saytingizni
+              ko'rsatish va topishda eng yaxshi natijalarga erishishga yordam
+              bering!
             </p>
-            <button>Learn More</button>
+            <button>Buyurtma berish</button>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Header() {
       </div>
       <Navbar />
       <div className={styles.main_content}>
-        <h1>Sed ut perspiciatis unde omnis iste natus error</h1>
+        <h1>Biznesingiz uchun IT xizmatlar!</h1>
         <div className={styles.main_button}>
           <a href="#">Web Sayt</a>
           <a href="#">Ilovalar</a>

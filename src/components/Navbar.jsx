@@ -73,7 +73,7 @@ export default function Navbar() {
           <Link href="tel:+998993185735">Bog'lanish</Link>
         </div>
         <div className={styles.drawer}>
-          <Image src={Btn} width={46} height={46} onClick={showDrawer} />
+          <Image src={Btn} width={46} height={46} onClick={showDrawer} alt="BTN"/>
         </div>
       </div>
         <div className={`${styles.sidebar}  ${open?styles.sidebarActive:''}`}>

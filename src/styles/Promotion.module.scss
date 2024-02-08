@@ -59,6 +59,8 @@
       margin-bottom: 14px;
     }
     .promotion_text {
+      display: flex;
+      justify-content: center;
       text-align: center;
       font-family: Barlow;
       font-size: 18px;
@@ -66,7 +68,7 @@
       line-height: 27px;
       letter-spacing: -0.108px;
       color: #fff;
-      max-width: 996px;
+      max-width: 996px; 
     }
     .promotion_btn {
       display: flex;
@@ -419,7 +421,7 @@
       align-items: center;
       justify-content: center;
 
-      a {
+      button {
         padding: 18px 44px;
         border-radius: 8px;
         background: #165caa;
@@ -431,6 +433,9 @@
         line-height: 150%; /* 27px */
         text-decoration: none;
         transition: all 0.3s ease-in-out;
+        outline: none;
+        border: none;
+        cursor: pointer;
 
         &:hover {
           background: #fff;

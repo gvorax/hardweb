@@ -35,48 +35,49 @@ const FAQList = () => {
     {
       number: "01",
       question: "Hard Web qanday xizmatlarni taqdim etadi?",
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-      lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
+      answer: `Biz IT sohasidagi muammolarni hal qilishga yordam beramiz. Istalgan turdagi veb-sayt, telegram bot, mobil ilova, internet magazinlarni siz uchun yaratamiz!`,
     },
     {
       number: "02",
       question: "Hard Web biznesimga qanday yordam berishi mumkin?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      answer:
+        "Agar sizga ma'lumotlar tahlil qilish, mobil ilovalar, veb-saytlar yoki ma'lumot omborlar kabi maxsus dasturlar ishlab chiqarish kerak bo'lsa, dasturlash kompaniyalari sizga yordam bera olishi mumkin. Ular sizning loyihangizni boshidan o'ngacha olib borishda yoki istalgan bosqichda yordam bera oladilar.",
     },
     // Add more FAQs here...
     {
-        number: "03",
-        question: "Hard Web qanday xizmatlarni taqdim etadi?",
-        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-        lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
-        },
-        {
-        number: "04",
-        question: "Hard Web biznesimga qanday yordam berishi mumkin?",
-        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        },
-        {
-        number: "05",
-        question: "Hard Web qanday xizmatlarni taqdim etadi?",
-        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-        lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
-        },
-        { 
-        number: "06",
-        question: "Hard Web biznesimga qanday yordam berishi mumkin?",
-        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        },
-        {
-        number: "07",
-        question: "Hard Web qanday xizmatlarni taqdim etadi?",
-        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-        lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
-        },
-        {
-        number: "08",
-        question: "Hard Web biznesimga qanday yordam berishi mumkin?",
-        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        }
+      number: "03",
+      question: "Hard Web qaysi sohalar bilan ishlaydi?",
+      answer: `Biz IT sohasidagi muammolarni hal qilishga yordam beramiz. Istalgan turdagi veb-sayt, telegram bot, mobil ilova, internet magazinlarni siz uchun yaratamiz!`,
+    },
+    {
+      number: "04",
+      question: "Hard Web bilan loyihani bajarish uchun qancha vaqt ketadi?",
+      answer: `Biz bir necha kun ichida loyihani boshlaymiz va siz bilan birgalikda harakat qilamiz. Agar loyiha katta bo'lsa, shu bilan birga vaqt ham ko'proq ketadi. Ammo, bizning jamoa har kuni siz bilan aloqada bo'lishadi va loyihaning har bir bosqichida siz bilan maslahatlashadi.`,
+    },
+    {
+      number: "05",
+      question:
+        "Loyiha tugagandan so'ng doimiy qo'llab-quvvatlash va texnik xizmat ko'rsatishni taklif qilasizmi?",
+      answer: `Bu bizning asosiy xizmatlarimizdan biri. Biz loyihani tugatgandan so'ng, uni doimiy ravishda qo'llab-quvvatlaymiz. Agar sizga qo'llab-quvvatlash kerak bo'lsa, bizning texnik xizmatlarimizdan foydalanishingiz mumkin.`,
+    },
+    {
+      number: "06",
+      question:
+        "Yarim tayyor dizayn yoki shunday loyihalar bilan ishlay olasizmi?",
+      answer:
+        "Ha, biz sizning loyihangizni boshidan o'ngacha olib borishda yordam beramiz.",
+    },
+    {
+      number: "07",
+      question: "Loyihani ishlab chiqish jarayonida qanday ishtirok etaman?",
+      answer: `Bizning jamoa har kuni siz bilan aloqada bo'lishadi va loyihaning har bir bosqichida siz bilan maslahatlashadi. Biz bir necha kun ichida loyihani boshlaymiz va siz bilan birgalikda harakat qilamiz. Agar loyiha katta bo'lsa, shu bilan birga vaqt ham ko'proq ketadi.`,
+    },
+    {
+      number: "08",
+      question:
+        "Veb-sayt yoki ilovalarga texnik xizmat ko'rsatish va yangilanishlar bilan yordam bera olasizmi?",
+      answer: ` Ha, bizning texnik xizmatlarimizdan foydalanishingiz mumkin. Agar sizga qo'llab-quvvatlash kerak bo'lsa, bizning texnik xizmatlarimizdan foydalanishingiz mumkin.`,
+    },
   ];
 
   return (
@@ -89,3 +90,4 @@ const FAQList = () => {
 };
 
 export default FAQList;
+

@@ -111,8 +111,8 @@ const About = () => {
                       y2="36.2176"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#165CAA" />
-                      <stop offset="1" stop-color="#8BC2FF" />
+                      <stop stopColor="#165CAA" />
+                      <stop offset="1" stopColor="#8BC2FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -153,8 +153,8 @@ const About = () => {
                       y2="32.9717"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#0079FF" />
-                      <stop offset="1" stop-color="#87C0FF" />
+                      <stop stopColor="#0079FF" />
+                      <stop offset="1" stopColor="#87C0FF" />
                     </linearGradient>
                   </defs>
                 </svg>

@@ -6,11 +6,14 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import Link from "next/link";
 import Icon3 from "../assets/Icon3.png";
+import Icon4 from "../assets/Icon4.png";
+import Icon5 from "../assets/Icon5.png";
+import Icon6 from "../assets/Icon6.png";
 import video from "../assets/bg_video.mp4";
 import Profile from "../assets/Profile.png";
-import Instagram from '../assets/instagram.png';
-import Facebook from '../assets/facebook.png';
-import Linkedin from '../assets/linkedin.png';
+import Instagram from "../assets/instagram.png";
+import Facebook from "../assets/facebook.png";
+import Linkedin from "../assets/linkedin.png";
 
 import logo from "../assets/logo.png";
 
@@ -49,24 +52,88 @@ export default function Promotion() {
     setActiveItem(itemName);
   };
 
+  const [values, setValues] = React.useState({
+    name: "",
+    phone: "",
+    message: "",
+    website: false,
+    telegrambot: false,
+    mobileapp: false,
+    other: false,
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setValues((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    console.log(values, "values111");
+  };
+  const handleCheckboxChange = (e) => {
+    const { name, checked } = e.target;
+    setValues((prev) => ({
+      ...prev,
+      [name]: checked,
+    }));
+    console.log(values, "values222");
+  };
+
+  const onHandleSubmit = (e) => {
+    e.preventDefault();
+
+    const telegramToken = "6477080242:AAFa97dSCX3jTsnKM9ayW0zOd-VuLk6ckQY";
+    const chatId = "-1002049359851";
+
+    const url = `https://api.telegram.org/bot${telegramToken}/sendMessage`;
+    const data = new URLSearchParams({
+      chat_id: chatId,
+      text: `
+          Name: ${values.name}
+          Phone: ${values.phone}
+          Message: ${values.message}
+          Website: ${values.website}
+          Telegram bot: ${values.telegrambot}
+          Mobile app: ${values.mobileapp}
+          Other: ${values.other}
+          price: ${value}
+          `,
+    });
+
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: data,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Message sent:", data);
+        alert("Message sent successfully!");
+      })
+      .catch((error) => console.error("Error:", error));
+  };
+
   return (
     <div>
       <div className={styles.promotion}>
         <div className={styles.promotion_bg_video}>
-          <video
-            src={video}
-            loop
-            autoPlay
-            muted
-          ></video>
+          <video src={video} loop autoPlay muted></video>
         </div>
         <div className={styles.promotion_content}>
-          <h1 className={styles.promotion_title}>Nima uchun HardWeb</h1>
+          <h1 className={styles.promotion_title}>Nima uchun HardWeb ?</h1>
           <p className={styles.promotion_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            Bizning kompaniyamiz sifatli xizmatlar va mahsulotlar taklif etadi.
+            Bizning dasturchilar jamoamiz yuqori sifatli ilovalar va
+            veb-saytlarni ishlab chiqishda professional o'zlashtirilgan va
+            ishonchli hisoblanadi.Bizning jamoamizning keng tajribasi bor. Biz
+            kompaniyalar, shaxslar va brendlar uchun turli xil sohalarda dizayn
+            va SEO xizmatlarini muvaffaqiyatli amalga oshirishda keng tajriba
+            egallaymiz.Bizning mijozlarimiz odatda bizning xizmatlarimizdan va
+            ilovalarimizdan juda mamnunlar. Biz o'z mijozlarimizni e'tibor bilan
+            eshitamiz va ularning talablariga moslashtirilgan yaxshi xizmat
+            ko'rsatishga intizom bilan ishlamiz.
           </p>
         </div>
       </div>
@@ -79,56 +146,61 @@ export default function Promotion() {
                 <span>Mahorat</span>
               </div>
               <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
+                Bizning dasturchilar jamoasi keng tajribaga ega va eng yangi
+                texnologiyalarni samarali shaklda ishlatadi. Mijozlarimizni
+                qiziqtiradigan dizaynlar, qulay va sodda interfeyslar, va yuqori
+                darajada SEO va ilovalar xizmatlarimiz bilan, bizning
+                kompaniyamiz IT sohasida etiborga sazovor bo'lib turadi.
               </p>
             </div>
           </div>
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
               <div className={styles.item_box}>
-              <Image src={Icon3} alt="img" />
-                <span>Mahorat</span>
+                <Image src={Icon4} alt="img" />
+                <span>Mijoz bilan kelishuv</span>
               </div>
               <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
+                Mijozlar bilan yaxshi aloqalar o'rnatish va ularning talablari
+                va istaklarini tushunish, bizning kompaniyamiz uchun eng muhim
+                vazifalardan biridir. Bu, bizga ularning ehtiyojlari va
+                talablari bo'yicha qanday qadam atishimiz kerakligini
+                tushunishga yordam beradi va bizning xizmatlarimizni ularga eng
+                yaxshi shaklda taqdim etishimizga imkon beradi.
               </p>
             </div>
           </div>
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
               <div className={styles.item_box}>
-              <Image src={Icon3} alt="img" />
-                <span>Mahorat</span>
+                <Image src={Icon5} alt="img" />
+                <span>Natijaga asoslangan yechimlar</span>
               </div>
               <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
+                Bizning jamoamiz o'z ta'limotini va tajribasini sodda va
+                samarali yechimlar qabul qilishga asoslanadi. Biz
+                mijozlarimizning ehtiyojlarini tushunish, kompaniyamizning
+                maqsadlariga mos ravishda yaxshi natijalarni olish uchun
+                yorqinlik bilan ishlaymiz. Bizga ishonch kiring, bizning
+                "natijaga asoslangan yechimlar" sizning talablaringizni
+                qondirishda va muvaffaqiyatga erishishda yordam berishimizga
+                o'xshash yechimlarni yaratishga xizmat qiladi.
               </p>
             </div>
           </div>
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
               <div className={styles.item_box}>
-              <Image src={Icon3} alt="img" />
-                <span>Mahorat</span>
+                <Image src={Icon6} alt="img" />
+                <span>Hamkorlik</span>
               </div>
               <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
+                Bizning kompaniyamizdan olingan ko'mak va qo'llab-quvvatlash o'z
+                vaqtida sizning muvaffaqiyat va rivojlanish uchun muhim bo'lishi
+                mumkin. Bizning hamkorlik imkoniyatlarimiz haqida ko'proq
+                ma'lumot olishni istaysizmi? Sizning kompaniyangiz bilan qanday
+                ko'rsatishimiz mumkinligini o'rganish uchun, biz bilan
+                bog'laning va muhokama boshlang.
               </p>
             </div>
           </div>
@@ -136,22 +208,18 @@ export default function Promotion() {
       </div>
       <div className={styles.promotion}>
         <div className={styles.promotion_bg_video}>
-          <video
-            src={video}
-            loop
-            autoPlay
-            muted
-          ></video>
+          <video src={video} loop autoPlay muted></video>
         </div>
         <div className={styles.promotion_content}>
           <h1 className={styles.promotion_title}>
             Mijozlarimiz biz haqimizda nima deyishadi
           </h1>
           <p className={styles.promotion_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            {/* Write me good feedback to our service  */}
+            Bizning mijozlarimizning fikrlari va mulohazalari bilan tanishing.
+            Bizning kompaniyamizning xizmatlaridan va mahsulotlaridan qanday
+            foyda ko'rishlari haqida o'qing. Bizning mijozlarimizning fikrlari
+            va mulohazalari bilan tanishing.
           </p>
         </div>
       </div>
@@ -174,12 +242,7 @@ export default function Promotion() {
               <div className={styles.feedbacks}>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
-                    <Image
-                      src={Profile}
-                      alt=""
-                      width={60}
-                      height={60}
-                    />
+                    <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
                     <h3>Ahmadov Ahmad</h3>
@@ -207,12 +270,7 @@ export default function Promotion() {
               <div className={styles.feedbacks}>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
-                    <Image
-                      src={Profile}
-                      alt=""
-                      width={60}
-                      height={60}
-                    />
+                    <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
                     <h3>Ahmadov Ahmad</h3>
@@ -240,12 +298,7 @@ export default function Promotion() {
               <div className={styles.feedbacks}>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
-                    <Image
-                      src={Profile}
-                      alt=""
-                      width={60}
-                      height={60}
-                    />
+                    <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
                     <h3>Ahmadov Ahmad</h3>
@@ -273,12 +326,7 @@ export default function Promotion() {
               <div className={styles.feedbacks}>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
-                    <Image
-                      src={Profile}
-                      alt=""
-                      width={60}
-                      height={60}
-                    />
+                    <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
                     <h3>Ahmadov Ahmad</h3>
@@ -306,12 +354,7 @@ export default function Promotion() {
               <div className={styles.feedbacks}>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
-                    <Image
-                      src={Profile}
-                      alt=""
-                      width={60}
-                      height={60}
-                    />
+                    <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
                     <h3>Ahmadov Ahmad</h3>
@@ -339,12 +382,7 @@ export default function Promotion() {
               <div className={styles.feedbacks}>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <div className={styles.feedback_img}>
-                    <Image
-                      src={Profile}
-                      alt=""
-                      width={60}
-                      height={60}
-                    />
+                    <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
                     <h3>Ahmadov Ahmad</h3>
@@ -359,36 +397,27 @@ export default function Promotion() {
       </div>
       <div className={styles.promotion}>
         <div className={styles.promotion_bg_video}>
-          <video
-            src={video}
-            loop
-            autoPlay
-            muted
-          ></video>
+          <video src={video} loop autoPlay muted></video>
         </div>
         <div className={styles.promotion_content}>
           <h1 className={styles.promotion_title}>
             Tez-Tez so'raladigan savollar
           </h1>
           <p className={styles.promotion_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            Hali ham savollaringiz bormi? Nimagap@hardweb.com orqali jamoamiz
+            bilan bog'laning
           </p>
         </div>
       </div>
       <div className="container">
         <FAQItem />
       </div>
-      <div className={styles.promotion} style={{height:'545px',marginTop:'50px'}}>
+      <div
+        className={styles.promotion}
+        style={{ height: "545px", marginTop: "50px" }}
+      >
         <div className={styles.promotion_bg_video}>
-          <video
-            src={video}
-            loop
-            autoPlay
-            muted
-          ></video>
+          <video src={video} loop autoPlay muted></video>
         </div>
         <div className={styles.promotion_content}>
           <div className={styles.promotion_logo}>
@@ -398,10 +427,10 @@ export default function Promotion() {
             Hard Web-ga qiziqqaningiz uchun tashakkur.
           </h1>
           <p className={styles.promotion_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            Bizning kompaniyamizning xizmatlaridan foydalanish uchun ro'yxatdan
+            o'ting va biz bilan bog'laning. Bizning jamoamiz sizning
+            o'zlashtirilgan loyihangizni boshidan o'ngacha olib borishda yordam
+            beradi.
           </p>
           <div className={styles.promotion_btn}>
             <a href="#">Loyihani boshlash</a>
@@ -409,15 +438,27 @@ export default function Promotion() {
         </div>
       </div>
       <div className={styles.forms}>
-        <div className={styles.form}>
+        <form className={styles.form} onSubmit={onHandleSubmit}>
           <div className={styles.form_name}>
             <div className={styles.name}>
               <label>F.I.SH</label>
-              <input type="text" placeholder="Shu yerga" />
+              <input
+                type="text"
+                placeholder="Shu yerga"
+                name="name"
+                value={values.name}
+                onChange={handleInputChange}
+              />
             </div>
             <div className={styles.name}>
               <label>Telefon</label>
-              <input type="text" placeholder="Shu yerga 99 123 45 57" />
+              <input
+                type="text"
+                placeholder="Shu yerga 99 123 45 57"
+                name="phone"
+                value={values.phone}
+                onChange={(e) => handleInputChange(e)}
+              />
             </div>
           </div>
           <div className={styles.types}>
@@ -425,23 +466,43 @@ export default function Promotion() {
             <div className={styles.checkbox}>
               <div className={styles.checkbox_item}>
                 <div className={styles.item_check}>
-                  <input type="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="website"
+                    checked={values.website}
+                    onChange={(e) => handleCheckboxChange(e)}
+                  />
                   <span></span>
                   <label>Web sayt</label>
                 </div>
                 <div className={styles.item_check}>
-                  <input type="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="telegrambot"
+                    checked={values.telegrambot}
+                    onChange={(e) => handleCheckboxChange(e)}
+                  />
                   <label>Telegram bot</label>
                 </div>
               </div>
               <div className={styles.checkbox_item}>
                 <div className={styles.item_check}>
-                  <input type="checkbox" />
-                  <label>Web sayt</label>
+                  <input
+                    type="checkbox"
+                    name="mobileapp"
+                    checked={values.mobileapp}
+                    onChange={(e) => handleCheckboxChange(e)}
+                  />
+                  <label>Mobil ilova</label>
                 </div>
                 <div className={styles.item_check}>
-                  <input type="checkbox" />
-                  <label>Telegram bot</label>
+                  <input
+                    type="checkbox"
+                    checked={values.other}
+                    name="other"
+                    onChange={(e) => handleCheckboxChange(e)}
+                  />
+                  <label>Boshqa...</label>
                 </div>
               </div>
             </div>
@@ -468,12 +529,19 @@ export default function Promotion() {
           </div>
           <div className={styles.message}>
             <label>Xabar</label>
-            <input type="text" placeholder="Shu yerga" />
+            <input
+              type="text"
+              placeholder="Shu yerga"
+              name="message"
+              onChange={(e) => handleInputChange(e)}
+            />
           </div>
           <div className={styles.form_btn}>
-            <a href="#">Yuborish</a>
+            <button type="submit" onClick={onHandleSubmit}>
+              Yuborish
+            </button>
           </div>
-        </div>
+        </form>
       </div>
 
       <div className={styles.footer}>

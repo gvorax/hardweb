@@ -28,12 +28,19 @@
   overflow: hidden;
   padding: 34px 50px;
   position: relative;
+  height: auto !important;
   max-height: 140px;
 }
 
-.open {
-  max-height: 220px; /* Approximate height of one line of text */
+.higher {
+  max-height: 190px;
 }
+
+.open {
+  height: auto;
+  max-height: 1000px; /* Approximate height of one line of text */
+}
+
 .faq_item {
   display: flex;
   align-items: center;
@@ -155,7 +162,7 @@
   .open {
     max-height: 240px;
   }
-  .faq_answer{
+  .faq_answer {
     margin-top: 20px;
   }
   .faq_answer p {

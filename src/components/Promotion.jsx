@@ -14,6 +14,12 @@ import Profile from "../assets/Profile.png";
 import Instagram from "../assets/instagram.png";
 import Facebook from "../assets/facebook.png";
 import Linkedin from "../assets/linkedin.png";
+import Selva from "../assets/selva.png";
+import Vital from "../assets/vital.png";
+import Bot from "../assets/bot.png";
+import Basco from "../assets/basco.png";
+import Vitalimg from "../assets/vitalimg.png";
+import Nurqand from "../assets/nurqand.png";
 
 import logo from "../assets/logo.png";
 
@@ -227,16 +233,15 @@ export default function Promotion() {
         <div className={styles.promotion_text}>
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
-              <h2 className={styles.item_title}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
-                dolor sit amet.
-              </h2>
+              <Image src={Selva} alt="Selva" className={styles.img} />
+
               <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
+                Assalomu alekum Mani ismim Ubaydullo “Selva” kompanyasida
+                menejer lavozimida ishlab kelaman. Biz IT komandasi bilan yaqin
+                muddat ichida ishlashni boshladik. To’g’risini aytadigan bolsam
+                menga ularning ishlash jarayonlari va ishlari juda maqul keldi.
+                Birinchi navbatda mijoz nima hohlashidan tortib , mijoz
+                istagidan koprog’ini bera olishdi! Kattakon Rahmat!
               </p>
 
               <div className={styles.feedbacks}>
@@ -245,8 +250,63 @@ export default function Promotion() {
                     <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
-                    <h3>Ahmadov Ahmad</h3>
-                    <p>Vital kompaniyasi rahbari</p>
+                    <h3>Ubaydullo</h3>
+                    <p>Selva kompaniyasi meneger</p>
+                  </div>
+                </div>
+                <a href="https://selva.uz/">Saytga kirish</a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.text_border}>
+            <div className={styles.promotion_text_item}>
+              <Image src={Vital} alt="Vital" className={styles.img} />
+
+              <p>
+                Assalomu alekum Mani ismim Ubaydullo “Vital water” kompanyasida
+                menejer lavozimida ishlab kelaman. Biz IT komandasi bilan yaqin
+                muddat ichida ishlashni boshladik. To’g’risini aytadigan bolsam
+                menga ularning ishlash jarayonlari va ishlari juda maqul keldi.
+                Birinchi navbatda mijoz nima hohlashidan tortib , mijoz
+                istagidan koprog’ini bera olishdi! Kattakon Rahmat!
+              </p>
+
+              <div className={styles.feedbacks}>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <div className={styles.feedback_img}>
+                    <Image src={Profile} alt="" width={60} height={60} />
+                  </div>
+                  <div className={styles.feedback_text}>
+                    <h3>Ubaydullo</h3>
+                    <p>Vital kompaniyasi meneger</p>
+                  </div>
+                </div>
+                <a href="https://vital-water.uz/">Saytga kirish</a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.text_border}>
+            <div className={styles.promotion_text_item}>
+              <Image src={Nurqand} alt="Nurqand" className={styles.img} />
+
+              <p>
+                Men Nurqand kompaniyasi menegeri Sunnatillo Fattoyev. Biz
+                Hardweb IT groupga noyob veb-sayt yaratish niyati bilan murojaat
+                qildik va ular nafaqat qiyinchilikni qabul qilishdi, balki
+                bizning kutganimizdan ham ko'proq natija berishdi. Ular amalga
+                oshirgan innovatsion xususiyatlar saytimizni ajratib turdi va
+                ular taqdim etgan ijodiy yechimlar bu sohadagi ishlarimizni
+                yengillashtirdi
+              </p>
+
+              <div className={styles.feedbacks}>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <div className={styles.feedback_img}>
+                    <Image src={Profile} alt="" width={60} height={60} />
+                  </div>
+                  <div className={styles.feedback_text}>
+                    <h3>Sunnatillo Fattoyev</h3>
+                    <p>Nurqand kompaniyasi rahbari</p>
                   </div>
                 </div>
                 <a href="#">Saytga kirish</a>
@@ -255,16 +315,16 @@ export default function Promotion() {
           </div>
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
-              <h2 className={styles.item_title}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
-                dolor sit amet.
-              </h2>
+              <Image src={Basco} alt="Basco" className={styles.img} />
+
               <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
+                Men Basco kompaniyasi menegeri Anvar Abduqahhorov. Biz
+                Hardweb IT groupga noyob veb-sayt yaratish niyati bilan murojaat
+                qildik va ular nafaqat qiyinchilikni qabul qilishdi, balki
+                bizning kutganimizdan ham ko'proq natija berishdi. Ular amalga
+                oshirgan innovatsion xususiyatlar saytimizni ajratib turdi va
+                ular taqdim etgan ijodiy yechimlar bu sohadagi ishlarimizni
+                yengillashtirdi
               </p>
 
               <div className={styles.feedbacks}>
@@ -273,26 +333,26 @@ export default function Promotion() {
                     <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
-                    <h3>Ahmadov Ahmad</h3>
-                    <p>Vital kompaniyasi rahbari</p>
+                    <h3>Anvar Abduqahhorov</h3>
+                    <p>Basco kompaniyasi rahbari</p>
                   </div>
                 </div>
-                <a href="#">Saytga kirish</a>
+                <a href="https://basco-landing-page.netlify.app/">Saytga kirish</a>
               </div>
             </div>
           </div>
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
-              <h2 className={styles.item_title}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
-                dolor sit amet.
-              </h2>
+              <Image src={Bot} alt="Bot" className={styles.img} />
+
               <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
+              Men Nurqand kompaniyasi menegeri Sunnatillo Fattoyev. Biz
+                Hardweb IT groupga noyob veb-sayt yaratish niyati bilan murojaat
+                qildik va ular nafaqat qiyinchilikni qabul qilishdi, balki
+                bizning kutganimizdan ham ko'proq natija berishdi. Ular amalga
+                oshirgan innovatsion xususiyatlar saytimizni ajratib turdi va
+                ular taqdim etgan ijodiy yechimlar bu sohadagi ishlarimizni
+                yengillashtirdi
               </p>
 
               <div className={styles.feedbacks}>
@@ -301,26 +361,25 @@ export default function Promotion() {
                     <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
-                    <h3>Ahmadov Ahmad</h3>
-                    <p>Vital kompaniyasi rahbari</p>
+                    <h3>Sunnatillo Fattoyev</h3>
+                    <p>Nurqand kompaniyasi manager</p>
                   </div>
                 </div>
-                <a href="#">Saytga kirish</a>
+                <a href="https://t.me/nurqand_bot">Saytga kirish</a>
               </div>
             </div>
           </div>
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
-              <h2 className={styles.item_title}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
-                dolor sit amet.
-              </h2>
+              <Image src={Vitalimg} alt="Vital" className={styles.img} />
+
               <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
+              Assalomu alekum Mani ismim Ubaydullo “Vital water” kompanyasida
+                menejer lavozimida ishlab kelaman. Biz IT komandasi bilan yaqin
+                muddat ichida ishlashni boshladik. To’g’risini aytadigan bolsam
+                menga ularning ishlash jarayonlari va ishlari juda maqul keldi.
+                Birinchi navbatda mijoz nima hohlashidan tortib , mijoz
+                istagidan koprog’ini bera olishdi! Kattakon Rahmat!
               </p>
 
               <div className={styles.feedbacks}>
@@ -329,64 +388,8 @@ export default function Promotion() {
                     <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
-                    <h3>Ahmadov Ahmad</h3>
-                    <p>Vital kompaniyasi rahbari</p>
-                  </div>
-                </div>
-                <a href="#">Saytga kirish</a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.text_border}>
-            <div className={styles.promotion_text_item}>
-              <h2 className={styles.item_title}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
-                dolor sit amet.
-              </h2>
-              <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
-              </p>
-
-              <div className={styles.feedbacks}>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <div className={styles.feedback_img}>
-                    <Image src={Profile} alt="" width={60} height={60} />
-                  </div>
-                  <div className={styles.feedback_text}>
-                    <h3>Ahmadov Ahmad</h3>
-                    <p>Vital kompaniyasi rahbari</p>
-                  </div>
-                </div>
-                <a href="#">Saytga kirish</a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.text_border}>
-            <div className={styles.promotion_text_item}>
-              <h2 className={styles.item_title}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum
-                dolor sit amet.
-              </h2>
-              <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae
-              </p>
-
-              <div className={styles.feedbacks}>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <div className={styles.feedback_img}>
-                    <Image src={Profile} alt="" width={60} height={60} />
-                  </div>
-                  <div className={styles.feedback_text}>
-                    <h3>Ahmadov Ahmad</h3>
-                    <p>Vital kompaniyasi rahbari</p>
+                    <h3>Ubaydullo</h3>
+                    <p>Vital kompaniyasi meneger</p>
                   </div>
                 </div>
                 <a href="#">Saytga kirish</a>

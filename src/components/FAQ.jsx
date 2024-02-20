@@ -4,9 +4,9 @@ const FAQItem = ({ number, question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={`faq_items ${isOpen ? "open" : ""}`}>
+    <div className={`faq_items ${number == '08' || number == '05' ? "higher": ''} ${isOpen ? "open" : ""} `}>
       <div className="faq_item" onClick={() => setIsOpen(!isOpen)}>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "flex-start" }}>
           <div className="faq_number">
             <h2 className={`${isOpen ? "active_faq" : ""}`}>{number}</h2>
           </div>

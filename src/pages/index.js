@@ -29,7 +29,7 @@ export default function Home() {
         <meta name="language" content="English" />
         <meta name="revisit-after" content="0.1 days" />
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="logo.png" />
       </Head>
       <main>
         <Header />

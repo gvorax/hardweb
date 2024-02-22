@@ -20,6 +20,7 @@ import Bot from "../assets/bot.png";
 import Basco from "../assets/basco.png";
 import Vitalimg from "../assets/vitalimg.png";
 import Nurqand from "../assets/nurqand.png";
+import Masterarena from "../assets/masterarena.png";
 
 import logo from "../assets/logo.png";
 
@@ -315,16 +316,21 @@ export default function Promotion() {
           </div>
           <div className={styles.text_border}>
             <div className={styles.promotion_text_item}>
-              <Image src={Basco} alt="Basco" className={styles.img} />
+              <Image
+                src={Masterarena}
+                alt="Masterarena"
+                className={styles.img}
+              />
 
               <p>
-                Men Basco kompaniyasi menegeri Anvar Abduqahhorov. Biz
-                Hardweb IT groupga noyob veb-sayt yaratish niyati bilan murojaat
-                qildik va ular nafaqat qiyinchilikni qabul qilishdi, balki
-                bizning kutganimizdan ham ko'proq natija berishdi. Ular amalga
-                oshirgan innovatsion xususiyatlar saytimizni ajratib turdi va
-                ular taqdim etgan ijodiy yechimlar bu sohadagi ishlarimizni
-                yengillashtirdi
+              Hayrli kun. Men MasterArenda tashkiloti asoschisiman. Biz
+                Hardweb IT Group bilan ishlash bizning biznesimiz uchun juda
+                katta o'zgarish bo'ldi. Ular nafaqat vizual jihatdan ajoyib
+                veb-sayt yaratdilar, balki uzluksiz funksionallikni ham
+                ta'minladilar. Bizning foydalanuvchilarimiz interaktiv dizaynni
+                yaxshi ko'radilar va shu vaqtdan boshlab bizning mijozlarimiz
+                sezilarli darajada oshdi. Biz bu kompaniyadan minnatdormiz
+              
               </p>
 
               <div className={styles.feedbacks}>
@@ -333,11 +339,13 @@ export default function Promotion() {
                     <Image src={Profile} alt="" width={60} height={60} />
                   </div>
                   <div className={styles.feedback_text}>
-                    <h3>Anvar Abduqahhorov</h3>
-                    <p>Basco kompaniyasi rahbari</p>
+                    <h3>Ixtiyor</h3>
+                    <p>Masterarena kompaniyasi manager</p>
                   </div>
                 </div>
-                <a href="https://basco-landing-page.netlify.app/">Saytga kirish</a>
+                <a href="#">
+                  Saytga kirish
+                </a>
               </div>
             </div>
           </div>
@@ -346,7 +354,7 @@ export default function Promotion() {
               <Image src={Bot} alt="Bot" className={styles.img} />
 
               <p>
-              Men Nurqand kompaniyasi menegeri Sunnatillo Fattoyev. Biz
+                Men Nurqand kompaniyasi menegeri Sunnatillo Fattoyev. Biz
                 Hardweb IT groupga noyob veb-sayt yaratish niyati bilan murojaat
                 qildik va ular nafaqat qiyinchilikni qabul qilishdi, balki
                 bizning kutganimizdan ham ko'proq natija berishdi. Ular amalga
@@ -374,7 +382,7 @@ export default function Promotion() {
               <Image src={Vitalimg} alt="Vital" className={styles.img} />
 
               <p>
-              Assalomu alekum Mani ismim Ubaydullo “Vital water” kompanyasida
+                Assalomu alekum Mani ismim Ubaydullo “Vital water” kompanyasida
                 menejer lavozimida ishlab kelaman. Biz IT komandasi bilan yaqin
                 muddat ichida ishlashni boshladik. To’g’risini aytadigan bolsam
                 menga ularning ishlash jarayonlari va ishlari juda maqul keldi.

@@ -28,6 +28,7 @@ export default function Home() {
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="0.1 days" />
+        <meta name="google-site-verification" content="DwnWtjx4r7e7D9EgC1Bu_7Qop_XZK0stS33E-KCXmSc" />
 
         <link rel="icon" href="logo.png" />
       </Head>
